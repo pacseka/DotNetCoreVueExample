@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <DockerTargetOS>Linux</DockerTargetOS>
+    <UserSecretsId>343297e1-c365-4550-ba6e-f5d34016b8f5</UserSecretsId>
+    <TypeScriptToolsVersion>3.0</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\js\src\applicationpage\**" />
+    <Content Remove="wwwroot\js\src\applicationpage\**" />
+    <EmbeddedResource Remove="wwwroot\js\src\applicationpage\**" />
+    <None Remove="wwwroot\js\src\applicationpage\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\js\main.ts" />
+    <Content Remove="wwwroot\js\src\components\Registration.vue" />
+    <Content Remove="wwwroot\js\src\shims-tsx.d.ts" />
+    <Content Remove="wwwroot\js\src\shims-vue.d.ts" />
+    <Content Remove="wwwroot\js\store.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="webpack.config.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="webpack.config.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bogus" Version="24.3.1" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="wwwroot\js\src\components\Registration.vue" />
+    <TypeScriptCompile Include="wwwroot\js\src\main.ts" />
+    <TypeScriptCompile Include="wwwroot\js\src\shims-vue.d.ts" />
+    <TypeScriptCompile Include="wwwroot\js\src\shims-tsx.d.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+</Project>
