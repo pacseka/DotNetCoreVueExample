@@ -1,13 +1,11 @@
 ﻿<template>
-        <input type="text" :class="{formatClass}" v-model="formatedNumber" v-on:keyup="onKeyUp" />
+        <input type="text" v-model="formatedNumber" v-on:keyup="onKeyUp" />
 </template>
 <script lang="ts">
     import { Vue, Component, Prop } from 'vue-property-decorator';
 
-
     @Component
     export default class Registration extends Vue {
-        @Prop(String) formatClass: string;
         @Prop([Number, String]) value!: number | string;
 
         formatedNumber: string = "";
@@ -25,7 +23,5 @@
             this.$emit('input', numValue);
             
         }
-
     }
-
 </script>

@@ -14,7 +14,7 @@
         <div class="form-group">
             <button v-on:click ="validate" class="form-control" >Mehet</button>
         </div>
-        <currency-formatted-input v-model="regNumber"></currency-formatted-input>
+        <currency-formatted-input v-model="regNumber" class="form-control"></currency-formatted-input>
         <div>
             Ez egy szám: {{regNumber}}
         </div>
