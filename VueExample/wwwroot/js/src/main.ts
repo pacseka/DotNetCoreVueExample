@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './userpage/App.vue'
 import store from "./userpage/store";
-import VeeValidate, { Validator } from 'vee-validate';
+import VeeValidate from 'vee-validate';
 
 
 

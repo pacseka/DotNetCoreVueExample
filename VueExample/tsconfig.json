@@ -17,7 +17,7 @@
         "strictNullChecks": true
     },
     "include": [
-        "wwwroot/js/src/**/*.ts", "build", "wwwroot/js/src/applicationpage/App.vue", "wwwroot/js/src/userpage/UserList.vue"
+        "wwwroot/js/src/**/*.ts", "wwwroot/js/src/applicationpage/App.vue", "wwwroot/js/src/userpage/UserList.vue"
     ],
     "compileOnSave": false,
     "exclude": [

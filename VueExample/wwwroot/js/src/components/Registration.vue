@@ -13,24 +13,30 @@
         </div>
         <div class="form-group">
             <button v-on:click ="validate" class="form-control" >Mehet</button>
-        </div>    
+        </div>
+        <currency-formatted-input v-model="regNumber"></currency-formatted-input>
+        <div>
+            Ez egy szám: {{regNumber}}
+        </div>
     </div>
 </template>
 <script lang="ts">
-    import Vue from 'vue';
-    import Component from 'vue-class-component';
+    import { Vue, Component, Prop } from 'vue-property-decorator';
+    import CurrencyFormattedInput from './CurrencyFormattedInput.vue';
 
-    const RegistrationProps = Vue.extend({
-        props: {
-            propTitle: String
+    @Component({
+        components: {
+            CurrencyFormattedInput
         }
     })
 
-    @Component
-    export default class Registration extends RegistrationProps {
+    export default class Registration extends Vue {
         email: string = "";
         password: string = "";
         tryCounter: number = 0;
+        regNumber: number | string = "";
+
+        @Prop(String)propTitle: string;
 
         validate(){
             this.$validator.validate().then(valid=> {
