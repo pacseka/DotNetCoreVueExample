@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  vueexample:
+    image: vueexample:frontendsonar
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "10080:80"
+      - "10443:443"
+    build:
+      context: .
+      target: frontend-build
+      dockerfile: VueExample/Dockerfile
