@@ -5,6 +5,9 @@
     <DockerTargetOS>Linux</DockerTargetOS>
     <UserSecretsId>343297e1-c365-4550-ba6e-f5d34016b8f5</UserSecretsId>
     <TypeScriptToolsVersion>3.0</TypeScriptToolsVersion>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+	<!-- Sonarnak kezzel -->
+	<ProjectGuid>{86EE1EEE-C960-4C50-BC49-B5ED619F4944}</ProjectGuid>
   </PropertyGroup>
 
   <ItemGroup>
@@ -31,11 +34,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Bogus" Version="24.3.1" />
+    <PackageReference Include="Bogus" Version="25.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
-    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.4.2" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="4.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="4.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="4.0.1" />
   </ItemGroup>
 
   <ItemGroup>

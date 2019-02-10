@@ -1,26 +1,28 @@
 {
-    "compilerOptions": {
-        "noImplicitAny": true,
-        "noEmitOnError": true,
-        "removeComments": false,
-        "sourceMap": true,
-        "target": "es5",
-        "module": "es2015",
-        "strict": true,
-        "moduleResolution": "node",
-        "baseUrl": "./wwwroot/js/",
-        "outDir": "wwwroot/js/built",
-        "experimentalDecorators": true,
-        "strictPropertyInitialization": false,
-        "allowSyntheticDefaultImports": true,
-        "noImplicitReturns": true,
-        "strictNullChecks": true
-    },
-    "include": [
-        "wwwroot/js/src/**/*.ts", "wwwroot/js/src/applicationpage/App.vue", "wwwroot/js/src/userpage/UserList.vue"
-    ],
-    "compileOnSave": false,
-    "exclude": [
-        "node_modules"
-    ]
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es5",
+    "module": "es2015",
+    "strict": true,
+    "moduleResolution": "node",
+    "baseUrl": "./wwwroot/js/",
+    "outDir": "wwwroot/js/built",
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitReturns": true,
+    "strictNullChecks": true
+  },
+  "include": [
+    "wwwroot/js/src/**/*.ts",
+    "wwwroot/js/src/applicationpage/App.vue",
+    "wwwroot/js/src/userpage/UserList.vue"
+  ],
+  "compileOnSave": false,
+  "exclude": [
+    "node_modules"
+  ]
 }
