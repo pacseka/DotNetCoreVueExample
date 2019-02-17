@@ -7,17 +7,17 @@ WORKDIR /src
 COPY . .
 WORKDIR /src/VueExample
 
-RUN npm install && \
-    npm install webpack -g && \
-    npm install webpack-cli -g && \
-    npm install sonarqube-scanner -g
-RUN webpack --config webpack.config.js
-
-RUN sonar-scanner \
-  -Dsonar.projectKey=job-frontend \
-  -Dsonar.sources=wwwroot/js/src \
-  -Dsonar.host.url=http://192.168.99.100:9000 \
-  -Dsonar.login=17814b829f4ccc2d101b9e69fcaac2ebc883db33
+#RUN npm install && \
+#    npm install webpack -g && \
+#    npm install webpack-cli -g && \
+#    npm install sonarqube-scanner -g
+#RUN webpack --config webpack.config.js
+#
+#RUN sonar-scanner \
+#  -Dsonar.projectKey=job-frontend \
+#  -Dsonar.sources=wwwroot/js/src \
+#  -Dsonar.host.url=http://192.168.99.100:9000 \
+#  -Dsonar.login=17814b829f4ccc2d101b9e69fcaac2ebc883db33
 
 
 #dotnet build
